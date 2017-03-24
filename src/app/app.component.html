@@ -7,7 +7,7 @@
     </p>
     <br/>
 
-    <ng2-datepicker  [(ngModel)]="date"></ng2-datepicker>
+    <ng2-datepicker [options]="options" [(ngModel)]="date"></ng2-datepicker>
 
     <button md-fab id="main-button" (click)="clickMe()" [disabled]="date == undefined">Click Me</button>
 
