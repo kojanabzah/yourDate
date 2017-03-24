@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<div class="home">
+
+  <div class="home-content">
+
+    <p class="app-landing-text">
+      Select Your Date :
+    </p>
+    <br/>
+
+    <ng2-datepicker  [(ngModel)]="date"></ng2-datepicker>
+
+    <button md-fab id="main-button" (click)="clickMe()" [disabled]="date == undefined">Click Me</button>
+
+    <h2 [hidden]="dateInfo == undefined">{{day}}/{{month}}:</h2>
+    <p>{{dateInfo}}</p>
+
+    <h2 [hidden]="yearInfo == undefined">{{year}}:</h2>
+    <p>{{yearInfo}}</p>
+
+    <h2 [hidden]="errorMessage == undefined">OOPS we have error:</h2>
+    <p>{{errorMessage}}</p>
+
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.app-landing-text {
+  text-align: center;
+    position: relative;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 50rem;
+    line-height: 1.15;
+    font-size: 4.0625rem;
+
+}
+
+.home{
+        overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background-size: 200px;
+
+    background-repeat: repeat;
+}
+
+.home-content{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    -webkit-transition: -webkit-transform .9s cubic-bezier(.4,0,0,1);
+    transition: -webkit-transform .9s cubic-bezier(.4,0,0,1);
+    transition: transform .9s cubic-bezier(.4,0,0,1);
+    transition: transform .9s cubic-bezier(.4,0,0,1),-webkit-transform .9s cubic-bezier(.4,0,0,1);
+        position: absolute;
+    display:block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    
+}
+
+#main-button{
+
+}
